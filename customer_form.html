@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="notice"></div>
+		<form id="customer_form" method="post" action="Customer.cfc?method=create">
+			<label for="customer_name">Name</label><br />
+			<input type="text" name="customer_name" id="customer_name" />
+			<br />
+			<label for="customer_email">Email</label><br />
+			<input type="text" name="customer_email" id="customer_email" />
+			<br />
+			<label for="customer_refer">How did you hear about us?</label><br />
+			<input type="radio" name="customer_refer" value="search" />Search engine<br />
+			<input type="radio" name="customer_refer" value="friend" />Friend<br />
+			<input type="radio" name="customer_refer" value="luck" />Dumb luck<br />
+			<br />
+			<input type="submit" value="Add Customer" />
+		</form>
+		<div id="help"></div>
+	</body>
+</html>
+<script type="text/javascript" src="customer_form.js"></script>
+<script type="text/javascript" src="helpers.js"></script>
+<script type="text/javascript" src="CustomerListener.js"></script>
+<script type="text/javascript" src="MessagingListener.js"></script>
+<script type="text/javascript" src="HelpListener.js"></script>
+
